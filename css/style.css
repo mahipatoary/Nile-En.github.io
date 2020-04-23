@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/bg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background:rgba(0,0,0,0.2);
+    color: #fff;
+    display: flex;justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    width: 22%;
+    text-align: center;
+    /*---background: seashell;---*/
+}
+
+nav .menu{
+    width: 50%;
+   /*-- background: red;--*/
+    display: flex;justify-content: space-around;
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    /*---background: green;---*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+section{
+
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 25px 0 20px 0;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 5px black;
+}
+
+section p{
+    margin-bottom: 25px;
+    font-size: 18px;
+    word-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+section .btn-1{
+    background: #fff;
+    color: black;
+}
+.btn-1:hover{
+    background: #00b894;
+    color: #fff;
+}
+.btn-2:hover{
+    background: #fff;
+    color: black;
+}
+
+section .btn-2{
+    background: #00b894;
+    color: #fff;
+}
+
+nav .menu a:first-child{
+    color: #00b894;
+}
+
+.change_contant:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    0%{content:"MutrahCorniche" ;}
+    20%{content:"Sultan Qaboos Grand Mosque" ;}
+    30%{content:"Al Alam Palace" ;}
+    45%{content:"Mutrah Souq" ;}
+    60%{content:"Royal Opera House Muscat" ;}
+    80%{content:"Nakhal Fort, Oman" ;}
+    100%{content:"Bimmah Sinkhole" ;}
+}
